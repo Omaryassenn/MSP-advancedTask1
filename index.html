@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MSP</title>
+  </head>
+  <body>
+    
+    <section class="card main">
+      <img class="side" alt="" src="assets/MSP_tech_club.png" />
+      <div class="register">
+        <br><br>
+        <header class="header">
+          <img alt="msp logo" src="assets/MSP_logo.png" />
+          <div>
+            <h1>Registration Form</h1>
+            <p>Welcome to MSP Tech Club ASU</p>
+          </div>
+        </header>
+        <form id="form" method="post" class="form">
+          <div>
+            <input
+              required
+              id="firstname"
+              type="text"
+              name="firstname"
+              placeholder="First name"
+            />
+            <input
+              required
+              id="lastname"
+              type="text"
+              name="lastname"
+              placeholder="Last name"
+            />
+          </div>
+          <input
+            required
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <div>
+            <input
+              required
+              id="password"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+            <input
+              required
+              id="confirmpass"
+              type="password"
+              name="password"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <br>
+          <div class="gender">
+            <label for="gender">Gender</label>
+            <div>
+              <input id="male" type="radio" name="gender" value="male" style="cursor: pointer;"/>
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input id="female" type="radio" name="gender" value="female" style="cursor: pointer;" />
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <br>
+          <input type="submit" value="Register" />
+          <input type="reset" value="Reset" />
+        </form>
+      </div>
+    </section>
+    <br><br><br><br>
+    <section class="card">
+      <table class="table">
+        <thead>
+          <tr>
+            <th style="border-top-left-radius: 2rem">Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th style="border-top-right-radius: 2rem">Gender</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

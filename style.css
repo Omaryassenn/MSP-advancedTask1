@@ -1,0 +1,128 @@
+body {
+  background: #00073d;
+}
+* {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.side {
+  grid-area: image;
+  width: 20rem;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+height: 513px;
+}
+
+.card {
+  width: fit-content;
+  height: 515px;
+  border: 1px solid #000;
+  border-radius: 2rem;
+  box-shadow: 0 0px 50px rgba(0, 0, 0, 0.4);
+  margin: 2rem auto;
+  background-image: url("assets/blur.png");
+  background-size: cover;
+}
+
+.main {
+  display: grid;
+  grid-template: "register image";
+  gap: 0rem;
+}
+
+.register .header {
+  grid-area: header;
+  display: flex;
+  align-items: flex-end;
+  width: fit-content;
+  height: fit-content;
+  margin: auto 0;
+}
+
+.register .header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.register .header p {
+  padding-left: 1rem;
+}
+
+.register .header img {
+  width: 4rem;
+  margin-right: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0rem;
+}
+
+.form > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form div.gender {
+  margin: 0 0.5rem;
+  font-size: large;
+}
+
+.form input {
+  background: #022160;
+  padding: 0.8rem;
+  margin: 0.3rem 0.5rem;
+  border-style: none;
+}
+
+.form input[type="submit"],
+input[type="reset"] {
+  color: #000;
+  background: #01a3f1;
+  box-shadow: 0px 0px 20px rgba(1, 163, 241, 0.65);
+  cursor: pointer;
+}
+
+.register {
+  grid-area: register;
+  padding: 2rem;
+}
+
+table td + td {
+  border-left: 2px solid #195fc2;
+}
+
+.table {
+  text-align: center;
+  color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-shadow: 0px 0px 40px rgba(1, 163, 241, 0.45);
+  border-collapse: separate;
+  border-radius: 2rem;
+  border-spacing: 0;
+}
+
+.table thead tr {
+  font-size: x-large;
+  background-color: #01a3f1;
+  text-align: center;
+}
+
+.table tr {
+  font-size: large;
+  height: 80px;
+}
+
+.table th,
+td {
+  padding: 10px;
+  min-width: 20rem;
+}
+
+tr:nth-child(even) {
+  background-color: #022160;
+}
