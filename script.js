@@ -1,7 +1,7 @@
 const storageUsers = JSON.parse(localStorage.getItem("users") || "[]");
 const initialLength = 10;
 
-const users = [...storageUsers];
+const users = storageUsers;
 
 const refreshTable = () => {
   const concatLength = initialLength - users.length;
